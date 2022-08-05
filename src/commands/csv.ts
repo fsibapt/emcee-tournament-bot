@@ -63,12 +63,12 @@ const command: CommandDefinition = {
 				event: "success"
 			})
 		);
-		await msg.reply({
+		/*await msg.reply({
 			content: pie
 				? `A list of themes in tournament ${id} with their counts is attached.`
 				: `A list of players for tournament ${id} with their deck is attached.`,
 			files: [{ attachment: file, name: `${id}.csv` }]
-		});
+		});*/
 	}
 };
 
