@@ -47,7 +47,7 @@ const command: CommandDefinition = {
 				event: "success"
 			})
 		);
-		await msg.reply(response);
+		//await msg.reply(response);
 	}
 };
 
