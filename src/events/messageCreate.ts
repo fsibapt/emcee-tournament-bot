@@ -206,9 +206,9 @@ async function verifyDeckAndConfirmPending(
 			await send(
 				bot,
 				channel,
-				`${who} has signed up for **${tournament.name}** with the following deck!${roleGrantWarning}`
+				`${who} has signed up for **${tournament.name}** with a legal deck!${roleGrantWarning}`
 			);
-			await send(bot, channel, formattedDeckMessage);
+			//await send(bot, channel, formattedDeckMessage);
 		} catch (error) {
 			logger.error(error);
 		}
@@ -253,8 +253,8 @@ async function verifyDeckAndUpdateConfirmed(
 	}
 	for (const channel of tournament.privateChannels) {
 		try {
-			await send(bot, channel, `${who} has updated their deck for **${tournament.name}** to the following!`);
-			await send(bot, channel, formattedDeckMessage);
+			await send(bot, channel, `${who} has updated their deck for **${tournament.name}** to a different legal deck!`);
+			//await send(bot, channel, formattedDeckMessage);
 		} catch (error) {
 			logger.error(error);
 		}
